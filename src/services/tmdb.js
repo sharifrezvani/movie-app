@@ -10,7 +10,6 @@ const headers = {
 
 export const searchMovies = async (query) => {
     try {
-        debugger
         const response = await fetch(
             `${BASE_URL}/search/movie?query=${encodeURIComponent(query)}`,
             { headers }
